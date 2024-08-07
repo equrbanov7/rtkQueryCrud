@@ -1,0 +1,66 @@
+.Table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+  
+    table {
+      width: 100%;
+      border: 1px solid #ddd;
+      cursor: pointer;
+
+      thead {
+        background-color: #007bff;
+        color: white;
+  
+        th {
+          padding: 18px;
+          text-align: left;
+        }
+      }
+  
+      tbody {
+        tr {
+          &:nth-child(even) {
+            background-color: #f2f2f2;
+            cursor: pointer;
+          }
+  
+          td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+  
+            .icon {
+              margin-right: 15px;
+              cursor: pointer;
+              background: none;
+              border: none;
+              font-size: 2em;
+  
+              &.info {
+                color: blue;
+              }
+  
+              &.delete {
+                color: red;
+              }
+  
+              &.edit {
+                color: green;
+              }
+  
+              &.cart {
+                color: teal;
+              }
+  
+              &.like {
+                color: red;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
